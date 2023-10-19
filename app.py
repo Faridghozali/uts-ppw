@@ -22,7 +22,7 @@ with Data:
    st.write(data)
 
 with lda:
-   topik = st.number_input("Masukkan Jumlah Topik yang Diinginkan", 1, step=1, value=5)
+   topik = st.selectbox("Pilih Jumlah Topik yang Diinginkan", [1, 2, 3, 4, 5], index=3)
    lda_model = None  # Inisialisasi lda_model
 
    def submit():
@@ -68,11 +68,8 @@ with Model:
     # Pelatihan model Decision Tree dengan data pelatihan
     model3.fit(X_train, y_train)
 
-    st.write("Pilih metode yang ingin anda gunakan :")
-    met1 = st.checkbox("KNN")
-    met2 = st.checkbox("Naive Bayes")
-    met3 = st.checkbox("Decision Tree")
-    submit2 = st.button("Pilih")
+   metode = st.radio("Pilih Metode", ["KNN", "Naive Bayes", "Decision Tree"])
+
 
     if submit2:      
         if met1:
