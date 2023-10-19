@@ -19,6 +19,7 @@ with Data:
    st.write(data)
 
 with lda:
+   st.image("header1.png")
    topik = st.selectbox("Pilih Jumlah Topik yang Diinginkan", [1, 2, 3, 4, 5], index=3)
    lda_model = None  # Inisialisasi lda_model
 
