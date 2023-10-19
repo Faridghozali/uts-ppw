@@ -10,7 +10,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.feature_extraction.text import CountVectorizer
 
 
-Data, lda, Model, Implementasi = st.beta_columns(['Data', 'LDA', 'Modelling', 'Implementasi'])
+Data, lda, Model, Implementasi = st.columns(['Data', 'LDA', 'Modelling', 'Implementasi'])
 
 
    
