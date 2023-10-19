@@ -99,7 +99,6 @@ with Model:
             st.write("Anda Belum Memilih Metode")
 
 with Implementasi:
-    st.image("header3.png")
     data = pd.read_csv("DF_PTA.csv")
     data['Abstrak'].fillna("", inplace=True)
     count_vectorizer = CountVectorizer(max_df=0.95, min_df=2)
@@ -126,9 +125,8 @@ with Implementasi:
         cleaned_text = ' '.join(words)
         
         return cleaned_text
-
-    st.subheader("Implementasi")
-    st.write("Masukkan Abstrak yang Ingin Dianalisis:")
+    st.image("header3.png")
+    st.write("Masukkan Abstrak dibawah sini :")
     user_abstract = st.text_area("Abstrak", "")
 
     if user_abstract:
