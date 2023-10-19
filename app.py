@@ -11,8 +11,9 @@ from sklearn.feature_extraction.text import CountVectorizer
 
 Data, lda, Model, Implementasi = st.tabs(['Data', 'LDA', 'Modelling', 'Implementasi'])
 
-   st.image("header.png")
+   
 with Data:
+   st.image("header.png")
    st.subheader("Data")
    data = pd.read_csv("DF_PTA.csv")
    st.write(data)
