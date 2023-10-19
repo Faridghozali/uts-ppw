@@ -39,7 +39,7 @@ with lda:
 
 with Model:
     tf = pd.read_csv("df_tf.csv")
-    st.image("header.png")
+    st.image("header2.png")
     st.subheader("Jumlah Topik yang Anda Gunakan : " + str(topik))
     lda = LatentDirichletAllocation(n_components=topik, doc_topic_prior=0.2, topic_word_prior=0.1, random_state=42, max_iter=1)
     lda_top = lda.fit_transform(tf)
