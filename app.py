@@ -68,7 +68,11 @@ with Model:
     # Pelatihan model Decision Tree dengan data pelatihan
     model3.fit(X_train, y_train)
 
-   metode = st.radio("Pilih Metode", ["KNN", "Naive Bayes", "Decision Tree"])
+    st.write("Pilih metode yang ingin anda gunakan :")
+    met1 = st.checkbox("KNN")
+    met2 = st.checkbox("Naive Bayes")
+    met3 = st.checkbox("Decision Tree")
+    submit2 = st.button("Pilih")
 
 
     if submit2:      
