@@ -9,7 +9,8 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.feature_extraction.text import CountVectorizer
 
-Data, lda, Model, Implementasi = st.beta_columns(4)
+
+Data, lda, Model, Implementasi = st.beta_columns(['Data', 'LDA', 'Modelling', 'Implementasi'])
 
 
    
